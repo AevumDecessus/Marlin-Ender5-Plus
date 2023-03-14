@@ -1248,7 +1248,8 @@
  *                                      X, Y, Z [, I [, J [, K...]]], E0 [, E1[, E2...]]
  */
 // AevumEdit set the Z(800) and E0(138) steps
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 800, 138 }
+// AevumEdit Fine tuned calibrated steps per unit
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80.402, 802.407, 396.88 }
 
 /**
  * Default Max Feed Rate (linear=mm/s, rotational=°/s)
@@ -2016,9 +2017,9 @@
  */
 //#define AUTO_BED_LEVELING_3POINT
 //#define AUTO_BED_LEVELING_LINEAR
-//#define AUTO_BED_LEVELING_BILINEAR
-// AevumEdit enable Unified Bed Leveling
-#define AUTO_BED_LEVELING_UBL
+// AevumEdit switch back to Bilinear 
+#define AUTO_BED_LEVELING_BILINEAR
+//#define AUTO_BED_LEVELING_UBL
 //#define MESH_BED_LEVELING
 
 /**
