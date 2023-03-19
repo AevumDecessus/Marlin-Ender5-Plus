@@ -3797,7 +3797,8 @@
 #define GCODE_MACROS
 #if ENABLED(GCODE_MACROS)
   #define GCODE_MACROS_SLOTS       5  // Up to 10 may be used
-  #define GCODE_MACROS_SLOT_SIZE  50  // Maximum length of a single macro
+  // AevumEdit Macro Slots need to be larger for PID tuning values
+  #define GCODE_MACROS_SLOT_SIZE  200  // Maximum length of a single macro
 #endif
 
 /**
